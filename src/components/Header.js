@@ -16,11 +16,11 @@ const Header = () => {
             <Button onClick={loginWithRedirect} className="btn-danger mx-3 d-none d-lg-block">
               SignUp
             </Button>
-            <FaUserPlus size="1.5rem" className="d-block d-lg-none" onClick={loginWithRedirect} />
+            <FaUserPlus size="1.3em" className="d-block d-lg-none" onClick={loginWithRedirect} />
             <Button onClick={loginWithRedirect} className="text-white btn-secondary mx-3 d-none d-lg-block">
               Login
             </Button>
-            <FaSignInAlt size="1.5rem" className="mr-3 d-block d-lg-none" onClick={loginWithRedirect} />
+            <FaSignInAlt size="1.3em" className="mr-3 d-block d-lg-none" onClick={loginWithRedirect} />
           </>
         }
         {!isLoading && user &&

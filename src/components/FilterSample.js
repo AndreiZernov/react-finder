@@ -58,7 +58,7 @@ const FilterSample = ({list, path}) => {
           <Form>
             <Container className="bg-dark rounded p-3 px-lg-5 mx-auto my-3">
               <Row>
-                <Col md={6} className="my-2">
+                <Col md={6} className="my-1">
                   <Form.Check
                     id="all" type='checkbox' custom inline name="Filter"
                     label={<img style={{height: "20px", filter:"brightness(0) invert(1)"}} src={require("../images/all.png")} alt="all"></img>}
@@ -76,7 +76,7 @@ const FilterSample = ({list, path}) => {
                 </Col>
                 <Col md={6} className="my-1">
                   <input id="search" type="text" placeholder="Search by content"
-                    className="rounded px-2 w-100 "
+                    className="rounded w-100 "
                     value={searchValue}
                     onChange={handleChange}
                   />

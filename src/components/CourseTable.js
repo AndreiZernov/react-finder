@@ -14,10 +14,10 @@ const CourseTable = ({data}) =>
         const handleClick = (item) => removePickedItem(`${[item.parent2]}-${[item.parent1]}-${[item.id]}`)
 
         return (
-          <div>
-            <Table className="my-3" striped bordered hover variant="dark">
-              <thead>
-                <tr>
+          <div  style={{height: "300px", overflow: "auto"}}>
+            <Table className="my-3"  striped bordered hover variant="dark">
+              <thead style={{height: "50px"}}>
+                <tr >
                   <th>+/-</th>
                   {data.hasOwnProperty('react') && <th>Author</th>}
                   <th>Name</th>
