@@ -16,7 +16,10 @@ const Item = ({data}) =>
         return (
           <>
             {data &&
-              <Card className="bg-dark text-light my-2 py-1 overflow-auto" style={{height:"16rem"}}>
+              <Card
+                className="bg-dark text-light my-2 py-1 overflow-auto"
+                style={{height:data.hasOwnProperty("price") ? "16rem" : "12rem"}}
+              >
                 {data.hasOwnProperty("price") &&
                   <Badge
                     className="m-1 mr-auto"

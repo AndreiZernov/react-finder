@@ -7,7 +7,7 @@ const Recommend = () => {
 
   return (
     <>
-      <Button variant="danger" className="position-fixed rounded" style={{top:"80%", left:"1%"}} onClick={() => setModalShow(true)}>
+      <Button variant="danger" className="position-fixed rounded" style={{top:"85%", left:"1%"}} onClick={() => setModalShow(true)}>
         RECOMMEND
       </Button>
       <MyModal show={modalShow} onHide={() => setModalShow(false)}/>

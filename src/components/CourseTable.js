@@ -15,7 +15,7 @@ const CourseTable = ({data}) =>
 
         return (
           <div  style={{height: "300px", overflow: "auto"}}>
-            <Table className="my-3"  striped bordered hover variant="dark">
+            <Table className="my-3" striped bordered hover variant="dark">
               <thead style={{height: "50px"}}>
                 <tr >
                   <th>+/-</th>

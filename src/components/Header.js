@@ -16,11 +16,11 @@ const Header = () => {
             <Button onClick={loginWithRedirect} className="btn-danger mx-3 d-none d-lg-block">
               SignUp
             </Button>
-            <FaUserPlus size="1.3em" className="d-block d-lg-none" onClick={loginWithRedirect} />
+            <FaUserPlus size="1.2em" className="d-block d-lg-none" onClick={loginWithRedirect} />
             <Button onClick={loginWithRedirect} className="text-white btn-secondary mx-3 d-none d-lg-block">
               Login
             </Button>
-            <FaSignInAlt size="1.3em" className="mr-3 d-block d-lg-none" onClick={loginWithRedirect} />
+            <FaSignInAlt size="1.2em" className="mr-3 d-block d-lg-none" onClick={loginWithRedirect} />
           </>
         }
         {!isLoading && user &&
@@ -34,7 +34,7 @@ const Header = () => {
             >
               Logout
             </Button>
-            <FaSignOutAlt size="1.5rem" className="mx-3 d-block d-lg-none"
+            <FaSignOutAlt size="1.3rem" className="mx-3 d-block d-lg-none"
               onClick={() => logout({ returnTo: window.location.origin })}
             />
           </>
@@ -77,5 +77,5 @@ const dropdownLinks = [
 
 const isAuthLinks = [
   { path: "account", name: "ACCOUNT", classItem: "px-lg-3 d-none d-lg-block"  },
-  { path: "account", name: <FaUserAlt size="1.5em"/> , classItem: "ml-3 d-block d-lg-none"  }
+  { path: "account", name: <FaUserAlt size="1.3em"/> , classItem: "ml-3 d-block d-lg-none"  }
 ]
