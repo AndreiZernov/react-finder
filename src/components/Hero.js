@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 
 const Hero = ({title, subtitle, target, btn}) =>
-  <div className="d-flex text-center" style={{height:"90vh"}}>
+  <div className="d-flex text-center py-5 my-5" >
     <div className="d-flex p-1 flex-column m-auto p-lg-5">
       <h1 style={{fontWeight: "700"}} className="display-2 my-2">
         {title}
@@ -12,7 +12,7 @@ const Hero = ({title, subtitle, target, btn}) =>
         {subtitle}
       </div>
       {
-        btn && <Link style={{fontWeight: "800"}} className="btn btn-light px-5 btn-lg rounded-pill m-auto" to={target}>
+        btn && <Link style={{fontWeight: "800"}} className="btn btn-light px-3 px-sm-5 btn-lg rounded-pill m-auto" to={target}>
         {btn}
         </Link>
       }

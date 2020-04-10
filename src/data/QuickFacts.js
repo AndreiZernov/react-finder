@@ -1,7 +1,7 @@
 const QuickFacts = {
   overview: {
     title: "About React Finder",
-    subtitle: `This website created for educational and career-changing purposes only. As a reference to helpful free resources and services. To help organize everything by the topics and importance of materials. All provided materials only with the high rates/views or recommended by communities. If some great courses not added to the list, kindly forgive me and send me the link to them by filling the RECOMMEND form in the bottom left corner. I will add them right away. \n This App fully developed on React Javascript Library with the integration of advanced tools and refactoring by the SASS preprocessor. Feel free to use this website to meet your personal learning goals as well as searching new career-changing opportunities. If you find this Web App useful, please share your experience with me on Twitter.`,
+    subtitle: `This website created for educational and career-changing purposes only. As a reference to helpful free resources and services. To help organize everything by the topics and importance of materials. All provided materials only with the high rates/views or recommended by communities. If some great courses not added to the list, kindly forgive me and send me the link to them by filling the RECOMMEND form in the bottom right corner. I will add them right away. \n This App fully developed on React Javascript Library with the integration of advanced tools and refactoring by the SASS preprocessor. Feel free to use this website to meet your personal learning goals as well as searching new career-changing opportunities. If you find this Web App useful, please share your experience with me on Twitter.`,
   },
   react: {
     title: "React Quick Facts",

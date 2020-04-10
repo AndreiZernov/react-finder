@@ -9,18 +9,18 @@ const Header = () => {
   const { isLoading, user, loginWithRedirect, logout } = useAuth0()
 
   return (
-    <Navbar className="flex-row-reverse" fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark" style={{opacity:".8"}}>
-      <Nav className="flex-row-reverse w-100 align-items-center">
+    <Navbar className="flex-row-reverse p-1 py-lg-2" fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark" style={{opacity:".8"}}>
+      <Nav className="flex-row-reverse w-100 align-items-center px-2">
         {!isLoading && !user &&
           <>
             <Button onClick={loginWithRedirect} className="btn-danger mx-3 d-none d-lg-block">
               SignUp
             </Button>
-            <FaUserPlus size="1.2em" className="d-block d-lg-none" onClick={loginWithRedirect} />
+            <FaUserPlus size="1.4em" className="icons d-block d-lg-none mx-1 mx-md-2" onClick={loginWithRedirect} />
             <Button onClick={loginWithRedirect} className="text-white btn-secondary mx-3 d-none d-lg-block">
               Login
             </Button>
-            <FaSignInAlt size="1.2em" className="mr-3 d-block d-lg-none" onClick={loginWithRedirect} />
+            <FaSignInAlt size="1.4em" className="icons d-block d-lg-none mx-1 mx-md-2" onClick={loginWithRedirect} />
           </>
         }
         {!isLoading && user &&
@@ -30,20 +30,22 @@ const Header = () => {
             )}
             <Button
               onClick={() => logout({ returnTo: window.location.origin })}
-              className="btn-danger mx-3 d-none d-lg-block"
+              className="btn-danger ml-4 mr-1 d-none d-lg-block"
             >
               Logout
             </Button>
-            <FaSignOutAlt size="1.3rem" className="mx-3 d-block d-lg-none"
+            <FaSignOutAlt size="1.4rem" className="icons d-block d-lg-none"
               onClick={() => logout({ returnTo: window.location.origin })}
             />
           </>
         }
         <LinkContainer className="m-auto pr-lg-5" to="/overview">
           <Navbar.Brand className="text-lg">
-            <h4 className="m-0 p-0" style={{fontWeight: "700"}}>
-              React <FaReact size="1.9em" color="rgb(89, 190, 255)" /> Finder
-            </h4>
+            <div className="m-1">
+              <span className="d-none d-sm-inline m-1 h4" style={{fontWeight: "700"}}>React</span>
+              <FaReact size="1.7em" color="rgb(89, 190, 255)" />
+              <span className="d-none d-sm-inline m-1 h4" style={{fontWeight: "700"}}>Finder</span>
+            </div>
           </Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -71,7 +73,7 @@ const NavigationLink = ({name, path, classItem}) =>
 const dropdownLinks = [
   { path: "", name: "HOME" },
   { path: "courses", name: "Courses" },
-  { path: "resources", name: "Resourses" }
+  { path: "resources", name: "Resources" }
 ]
 
 

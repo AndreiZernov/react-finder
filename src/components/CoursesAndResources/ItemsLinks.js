@@ -4,7 +4,7 @@ import { OverlayTrigger, Tooltip } from 'react-bootstrap'
 
 
 const ItemsLinks = ({path, url, list}) =>
-  <div className="d-flex justify-content-center my-2">
+  <div className="d-flex justify-content-center my-2 flex-wrap">
     <OverlayTrigger
       key='top'
       placement='top'
@@ -14,7 +14,7 @@ const ItemsLinks = ({path, url, list}) =>
         </Tooltip>}
     >
       <Link className="m-3" to={`${url}`}>
-        <img style={{height: "40px"}} src={require(`../../images/all.png`)} alt="all"></img>
+        <img style={{height: "35px"}} src={require(`../../images/all.png`)} alt="all"></img>
       </Link>
     </OverlayTrigger>
 
@@ -32,7 +32,7 @@ const ItemsLinks = ({path, url, list}) =>
       >
         <Link className={path === "/courses" ? "m-2 m-xl-3" : "m-2 m-xl-4"} to={`${url}/${name}`}>
           <img
-            style={{height: "40px"}}
+            style={{height: "35px"}}
             src={require(`../../images/${name}.${ path === "/courses" ? "png" : "svg"}`)}
             alt={name}>
           </img>

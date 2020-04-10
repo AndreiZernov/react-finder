@@ -1,0 +1,33 @@
+// display-2 - hero title class
+// h5 - subtitles class
+// h2 - about title class
+// h4 - span footer
+
+
+
+@media (max-width: 768px) {
+  .display-2 {
+    font-size: 4rem;
+  }
+  .h2 {
+    font-size: 1.8rem;
+  }
+  .h5{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .foot-span {
+    font-size: .8rem;
+  }
+  .display-2 {
+    font-size: 3.5rem;
+  }
+  .h2 {
+    font-size: 1.4rem;
+  }
+  .h5{
+    font-size: .8rem;
+  }
+}

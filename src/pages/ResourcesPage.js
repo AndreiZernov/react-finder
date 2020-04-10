@@ -3,7 +3,6 @@ import { useRouteMatch } from 'react-router-dom'
 import { AppConsumer } from "../context"
 import CoursesAndResources from '../components/CoursesAndResources'
 import ItemsLinks from '../components/CoursesAndResources/ItemsLinks'
-import Recommend from '../components/Recommend'
 
 
 
@@ -21,7 +20,6 @@ const ResourcesPage = () => {
               data={filteredResourcesData}
               list={List}
             />
-            <Recommend />
           </div>
         }
       </AppConsumer>

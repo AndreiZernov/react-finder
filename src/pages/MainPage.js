@@ -1,6 +1,5 @@
 import React from 'react'
 import Hero from '../components/Hero'
-import Recommend from '../components/Recommend'
 
 
 const MainPage = () =>
@@ -11,7 +10,6 @@ const MainPage = () =>
         btn="Learn More"
         target='/overview'
       />
-      <Recommend />
     </>
 
 

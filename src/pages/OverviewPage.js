@@ -4,14 +4,13 @@ import { useLocation, Link } from "react-router-dom"
 import About from '../components/About'
 import QuickFacts from '../data/QuickFacts'
 import ItemsLinks from '../components/CoursesAndResources/ItemsLinks'
-import Recommend from '../components/Recommend'
 
 
 
 const OverviewPage = () => {
   let id = useLocation().pathname.substr(1)
   return (
-    <div className="pt-5">
+    <div className="py-3 pt-xl-5">
       <About
         title={QuickFacts[id].title}
         subtitle={QuickFacts[id].subtitle}
@@ -37,8 +36,7 @@ const OverviewPage = () => {
           </Col>
         </Row>
       </Container>
-      <p className="text-center pb-5 my-3" style={{color:"tomato"}}><i>Fully immersed in Software Engineering. World traveller. Beer lover. Sincerely Yours Andrew Z.</i></p>
-      <Recommend />
+      <p className="text-center mb-5 h5" style={{color:"tomato"}}><i>Fully immersed in Software Engineering. World traveller. Beer lover. Sincerely Yours Andrew Z.</i></p>
     </div>
   )
 }

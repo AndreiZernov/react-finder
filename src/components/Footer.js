@@ -1,15 +1,21 @@
 import React from 'react'
 import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import Recommend from './Recommend'
+
 
 
 const Footer = () =>
-  <footer className="d-flex fixed-bottom align-items-center px-1 px-md-3 bg-dark" style={{opacity:".8"}}>
-    {FooterContent.map(link =>
-      <a className="m-1 m-lg-2" key={link.id} href={link.url} target="_blank" rel="noopener noreferrer">
-        {link.img}
-      </a>
-    )}
-    <span className="ml-auto text-right">&copy; Copyright 2020 React Finder, ReactJS App. MIT license.</span>
+  <footer className="d-flex fixed-bottom justify-content-between align-items-center px-md-3 p-1 bg-dark" style={{opacity:".8"}}>
+    <div>
+
+      {FooterContent.map(link =>
+        <a className="m-1 m-lg-2" key={link.id} href={link.url} target="_blank" rel="noopener noreferrer">
+          {link.img}
+        </a>
+      )}
+    </div>
+
+    <Recommend />
   </footer>
 
 

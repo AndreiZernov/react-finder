@@ -7,9 +7,7 @@ import OverviewPage from './pages/OverviewPage'
 import CoursesPage from './pages/CoursesPage'
 import ResourcesPage from './pages/ResourcesPage'
 import NotFoundPage from './pages/NotFoundPage'
-import LogIn from './pages/Auth/LogIn'
-import SignUp from './pages/Auth/SignUp'
-import Account from './pages/Account'
+import AccountPage from './pages/AccountPage'
 // import Profile from './Account/AccountInfo/InfoSettings/Profile'
 // import MyLinks from './Account/MyLinks'
 // import Settings from './Account/Settings'
@@ -38,9 +36,7 @@ const openRoutes = [
   { id: 1, path: '/overview', Component: OverviewPage, exact: true },
   { id: 2, path: '/courses', Component: CoursesPage, exact: false },
   { id: 3, path: '/resources', Component: ResourcesPage, exact: false },
-  { id: 4, path: '/login', Component: LogIn, exact: true },
-  { id: 5, path: '/signup', Component: SignUp, exact: true },
-  { id: 6, path: '/account', Component: Account, exact: false },
+  { id: 4, path: '/account', Component: AccountPage, exact: false },
 ]
 
 // const protectedRoures = [

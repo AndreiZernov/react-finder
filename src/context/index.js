@@ -9,14 +9,16 @@ const AppProvider = ({children}) => {
   const [ filteredResourcesData, setFilteredResourcesData ] = useState(resourcesData)
   const [ pickedItem, setPickedItem ] = useState("")
   const [ pickedItems, setPickedItems ] = useState([])
+  const [ newCourses, setNewCourses ] = useState('')
 
 
   useEffect(() => {
     pickedItem && !pickedItems.includes(pickedItem) && setPickedItems(pickedItems => [...pickedItems, pickedItem])
     setPickedItem('')
   }, [pickedItem, pickedItems])
-  const removePickedItem = (id) => setPickedItems(pickedItems.filter(item => item !== id))
 
+  const removePickedItem = (id) => setPickedItems(pickedItems.filter(item => item !== id))
+  const removeNewCourses = (course) => setNewCourses(newCourses.filter(item => item.id !== course.id))
 
   return (
     <AppContext.Provider value={{
@@ -24,6 +26,7 @@ const AppProvider = ({children}) => {
       setPickedItem, removePickedItem, pickedItems,
       filteredCoursesData, setFilteredCoursesData,
       filteredResourcesData, setFilteredResourcesData,
+      newCourses, setNewCourses, removeNewCourses
     }} >
       {children}
     </AppContext.Provider>

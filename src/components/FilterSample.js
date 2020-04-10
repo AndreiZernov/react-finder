@@ -55,20 +55,20 @@ const FilterSample = ({list, path}) => {
         }
 
         return (
-          <Form>
+          <Form className="mx-1">
             <Container className="bg-dark rounded p-3 px-lg-5 mx-auto my-3">
               <Row>
                 <Col md={6} className="my-1">
                   <Form.Check
                     id="all" type='checkbox' custom inline name="Filter"
-                    label={<img style={{height: "20px", filter:"brightness(0) invert(1)"}} src={require("../images/all.png")} alt="all"></img>}
+                    label={<img style={{height: "17px", filter:"brightness(0) invert(1)"}} src={require("../images/all.png")} alt="all"></img>}
                     checked={topics["all"]}
                     onChange={handleChange}
                   />
                   {list.map(name =>
                     <Form.Check
                       key={name} id={name} type='checkbox' custom inline name="Filter"
-                      label={<img style={{height: "20px", filter:"brightness(0) invert(1)"}} src={require(`../images/${name}.${ path === "/courses" ? "png" : "svg"}`)} alt={name}></img>}
+                      label={<img style={{height: "17px", filter:"brightness(0) invert(1)"}} src={require(`../images/${name}.${ path === "/courses" ? "png" : "svg"}`)} alt={name}></img>}
                       checked={topics[name]}
                       onChange={handleChange}
                     />
