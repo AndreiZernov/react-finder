@@ -1,16 +1,14 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import ProfileAndMenu from './ProfileAndMenu'
-import ItemsTables from './ItemsTables'
-
-
+import Tables from './Tables'
 
 
 const Account = () =>
     <Container className="py-5 my-5">
       <ProfileAndMenu />
 
-      <ItemsTables />
+      <Tables />
     </Container>
 
 

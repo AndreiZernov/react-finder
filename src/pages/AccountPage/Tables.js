@@ -1,31 +1,31 @@
 import React from 'react'
-import { AppConsumer } from "../../context"
+import { DataItemsConsumer } from "../../contexts/dataItems-context"
 import { Row, Col, Card } from 'react-bootstrap'
-import CourseTable from '../../components/Account/CourseTable'
+import ItemsTable from '../../components/Account/ItemsTable'
 
 
-const ItemsTables = () =>
-    <AppConsumer>
+const Tables = () =>
+    <DataItemsConsumer>
       {({coursesData, resourcesData}) =>
         <>
           <Row className="justify-content-between">
             <Col border="secondary" bg="dark" as={Card} className="mx-auto p-2 my-3">
               <h1 className="text-center mb-0 h2">Courses</h1>
-              <CourseTable data={coursesData} />
+              <ItemsTable data={coursesData} />
             </Col>
           </Row>
 
           <Row className="justify-content-between">
-            {ResourcesTables.map(resTable =>
-              <Col key={resTable.name} border="secondary" bg="dark" as={Card} lg={5} className="mx-md-auto mx-1 p-2 mb-5">
-                <h3 className="text-center mb-0 h2">{resTable.title}</h3>
-                <CourseTable data={FilterResourcesData(resourcesData, resTable.name)} />
+            {ResourcesTables.map(resourseTable =>
+              <Col key={resourseTable.name} border="secondary" bg="dark" as={Card} lg={5} className="mx-md-auto mx-1 p-2 mb-5">
+                <h3 className="text-center mb-0 h2">{resourseTable.title}</h3>
+                <ItemsTable data={FilterResourcesData(resourcesData, resourseTable.name)} />
               </Col>
             )}
           </Row>
         </>
       }
-    </AppConsumer>
+    </DataItemsConsumer>
 
 
 const FilterResourcesData = (data, check) => {
@@ -45,4 +45,4 @@ const ResourcesTables = [
 ]
 
 
-export default ItemsTables
+export default Tables

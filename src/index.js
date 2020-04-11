@@ -1,20 +1,20 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router } from 'react-router-dom'
-import { AppProvider } from './context'
+import { DataItemsProvider } from './contexts/dataItems-context'
+import { Auth0Provider } from './contexts/auth0-context';
 import App from './App'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './css/app.css'
-import { Auth0Provider } from './context/auth0-context';
 
 
 
 ReactDOM.render(
   <Auth0Provider>
-    <AppProvider>
+    <DataItemsProvider>
       <Router>
         <App />
       </Router>
-    </AppProvider>
+    </DataItemsProvider>
   </Auth0Provider>
   ,document.getElementById('root'));

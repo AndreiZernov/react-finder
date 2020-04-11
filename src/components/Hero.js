@@ -12,8 +12,9 @@ const Hero = ({title, subtitle, target, btn}) =>
         {subtitle}
       </div>
       {
-        btn && <Link style={{fontWeight: "800"}} className="btn btn-light px-3 px-sm-5 btn-lg rounded-pill m-auto" to={target}>
-        {btn}
+        btn &&
+        <Link style={{fontWeight: "800"}} className="btn btn-light px-3 px-sm-5 btn-lg rounded-pill m-auto" to={target}>
+          {btn}
         </Link>
       }
     </div>

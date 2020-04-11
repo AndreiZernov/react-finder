@@ -1,8 +1,8 @@
 import React from 'react'
+import { useAuth0 } from '../contexts/auth0-context'
 import { Nav, Navbar, Button } from "react-bootstrap"
 import { LinkContainer } from "react-router-bootstrap"
 import { FaReact, FaSignInAlt, FaUserPlus, FaSignOutAlt, FaUserAlt } from 'react-icons/fa'
-import { useAuth0 } from '../context/auth0-context'
 
 
 const Header = () => {

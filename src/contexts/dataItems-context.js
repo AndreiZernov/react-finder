@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext, createContext } from 'react'
 
-const AppContext = React.createContext()
+const DataItemsContext = createContext()
 
-const AppProvider = ({children}) => {
+const useDataItems = () => useContext(DataItemsContext)
+
+const DataItemsProvider = ({children}) => {
   const [ coursesData ] = useState(require("../data/CoursesData").default)
   const [ resourcesData ] = useState(require("../data/ResourcesData").default)
   const [ filteredCoursesData, setFilteredCoursesData ] = useState(coursesData)
@@ -17,22 +19,27 @@ const AppProvider = ({children}) => {
     setPickedItem('')
   }, [pickedItem, pickedItems])
 
+
   const removePickedItem = (id) => setPickedItems(pickedItems.filter(item => item !== id))
   const removeNewCourses = (course) => setNewCourses(newCourses.filter(item => item.id !== course.id))
 
+
+  const dataItems = {
+    coursesData,
+    resourcesData,
+    setPickedItem, removePickedItem, pickedItems,
+    filteredCoursesData, setFilteredCoursesData,
+    filteredResourcesData, setFilteredResourcesData,
+    newCourses, setNewCourses, removeNewCourses
+  }
+
   return (
-    <AppContext.Provider value={{
-      coursesData, resourcesData,
-      setPickedItem, removePickedItem, pickedItems,
-      filteredCoursesData, setFilteredCoursesData,
-      filteredResourcesData, setFilteredResourcesData,
-      newCourses, setNewCourses, removeNewCourses
-    }} >
+    <DataItemsContext.Provider value={dataItems} >
       {children}
-    </AppContext.Provider>
+    </DataItemsContext.Provider>
   )
 }
 
-const AppConsumer = AppContext.Consumer
+const DataItemsConsumer = DataItemsContext.Consumer
 
-export { AppProvider, AppConsumer, AppContext }
+export { DataItemsProvider, DataItemsConsumer, DataItemsContext, useDataItems }

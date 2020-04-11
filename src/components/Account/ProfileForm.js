@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Form, Button } from "react-bootstrap"
 
 
-const FormSample = ({list, uploadedImage}) => {
+const ProfileForm = ({list, uploadedImage}) => {
   const [validated, setValidated] = useState(false);
 
   const handleSubmit = (event) => {
@@ -34,6 +34,7 @@ const FormSample = ({list, uploadedImage}) => {
       {list.map(form =>
         <Form.Group key={form.id} controlId={form.id}>
           <Form.Control
+            className={form.type === "file" && "d-none"}
             required
             type={form.type}
             placeholder={form.placeholder}
@@ -49,4 +50,4 @@ const FormSample = ({list, uploadedImage}) => {
   )}
 
 
-export default FormSample
+export default ProfileForm

@@ -19,6 +19,7 @@ export class Auth0Provider extends Component {
         redirect_uri: window.location.origin
     };
 
+
     componentDidMount() {
         this.initializeAuth0();
     }

@@ -6,7 +6,7 @@ const ItemModal = ({data, func}) => {
   const [ modalShow, setModalShow ] = React.useState(false)
     return (
       <>
-        <Button variant="secondary" className="px-2" onClick={() => setModalShow(true)}>
+        <Button variant="secondary" size="sm" className="px-2 rounded py-2 mb-2" onClick={() => setModalShow(true)}>
           Learn More
         </Button>
         <MyModal
@@ -32,6 +32,13 @@ const MyModal = ({data, show, onHide}) =>
       className="text-light text-center"
     >
       <Modal.Body className="bg-dark">
+      {data.hasOwnProperty("price") &&
+        <Badge
+          className="m-1 mr-auto"
+          variant={data.price.toLowerCase().includes("free") ? "danger" : "light"}>
+          {data.price}
+        </Badge>
+      }
         <h4>
           {data.name}
         </h4>
