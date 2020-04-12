@@ -1,6 +1,5 @@
 import React from 'react'
 import { Modal, Button } from 'react-bootstrap'
-import ProfileForm from './ProfileForm'
 import YourLinks from './YourLinks'
 
 
@@ -42,9 +41,6 @@ const MyModal = ({data, show, onHide, uploadedImage, list, editData}) =>
       className="text-light text-center"
     >
       <Modal.Body className="bg-dark">
-        {data === "Edit Profile" &&
-          <ProfileForm list={list} uploadedImage={uploadedImage}/>
-        }
         {(data === "Add Your Links" || data === "Edit") &&
           <YourLinks data={data} editData={editData} onHide={onHide}/>
         }

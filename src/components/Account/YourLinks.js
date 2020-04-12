@@ -55,7 +55,7 @@ const YourLinks = ({data, editData, onHide}) => {
 
   return (
 
-      <Accordion defaultActiveKey={data === "Edit" && editData.parent2 === "resourcesData" ? "2" : "1"}>
+      <Accordion defaultActiveKey={data === "Edit" && editData.parent2 === "resourcesData" ?  "2" : data === "Add Your Links" ? "0" : "1"}>
         <p>{data === "Edit" ? "Please Edit Form Below!" : "Choose What you Would Like To Add First!"}</p>
         {YourLinksForms(inputValueCourse,inputValueResource).map(linkform =>
           <Card key={linkform.validation} bg="dark">
