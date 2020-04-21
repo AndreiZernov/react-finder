@@ -8,7 +8,7 @@ const Hero = ({title, subtitle, target, btn}) =>
       <h1 style={{fontWeight: "700"}} className="display-2 my-2">
         {title}
       </h1>
-      <div className="w-75 my-4 px-xl-5 mx-auto h5" style={{color:"rgb(89, 190, 255)", whiteSpace: "pre-line"}}>
+      <div className="w-75 my-4 px-xl-5 mx-auto h5" style={{whiteSpace: "pre-line"}}>
         {subtitle}
       </div>
       {

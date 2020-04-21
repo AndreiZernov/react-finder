@@ -8,7 +8,6 @@ const FilterSample = ({list, path}) => {
   const [ searchValue, setSearchValue ] = React.useState("")
   const [ topics, setTopics ] = React.useState({all: true, react: false, react_native: false, redux: false, graphql: false, pathway: false, job_search: false, podcasts: false, resources: false, html_css: false })
 
-
   const FilterSearch = (data, search) => {
     let newData = {}
     for (let [key, value] of Object.entries(data)) {
@@ -76,7 +75,7 @@ const FilterSample = ({list, path}) => {
           </Col>
           <Col md={6} className="my-1">
             <input id="search" type="text" placeholder="Search by content"
-              className="rounded w-100 "
+              className="rounded w-100 pl-2"
               value={searchValue}
               onChange={handleChange}
             />

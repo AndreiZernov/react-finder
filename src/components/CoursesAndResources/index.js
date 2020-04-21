@@ -8,6 +8,7 @@ import FilterSample from '../FilterSample'
 
 const CoursesAndResources = ({ path, url, data, list }) => {
   const { coursesData, resourcesData } = useDataItems()
+  console.log("coursesData")
 
   return (
     <Switch>

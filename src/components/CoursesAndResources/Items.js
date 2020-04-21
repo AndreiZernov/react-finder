@@ -2,7 +2,6 @@ import React from 'react'
 import { useParams } from "react-router-dom"
 import List from './List'
 import About from '../About'
-import QuickFacts from '../../data/QuickFacts'
 
 
 const Items = ({data}) => {
@@ -10,9 +9,9 @@ const Items = ({data}) => {
   return (
     <>
       <About
-        title={QuickFacts[id].title}
-        subtitle={QuickFacts[id].subtitle}
-        list={QuickFacts[id].list}
+        title={data[id][0].title}
+        subtitle={data[id][0].content}
+        list={data[id][0].list}
       />
       {data.hasOwnProperty(id) &&
         <List

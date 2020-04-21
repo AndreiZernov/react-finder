@@ -5,20 +5,24 @@ import CoursesAndResources from '../components/CoursesAndResources'
 import ItemsLinks from '../components/CoursesAndResources/ItemsLinks'
 
 
-
 const CoursesPage = () => {
   let { path, url } = useRouteMatch();
-  const { filteredCoursesData } = useDataItems()
+  const { filteredCoursesData, loading } = useDataItems()
 
   return (
     <div className="my-5 py-5">
-      <ItemsLinks path={path} url={url} list={List}/>
-      <CoursesAndResources
-        path={path}
-        url={url}
-        data={filteredCoursesData}
-        list={List}
-      />
+      {
+        !loading &&
+        <>
+          <ItemsLinks path={path} url={url} list={List}/>
+          <CoursesAndResources
+            path={path}
+            url={url}
+            data={filteredCoursesData}
+            list={List}
+          />
+        </>
+      }
     </div>
   )
 }

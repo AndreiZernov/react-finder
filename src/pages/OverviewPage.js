@@ -1,20 +1,15 @@
 import React from 'react'
 import { Container, Col, Row} from 'react-bootstrap'
-import { useLocation, Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 import About from '../components/About'
-import QuickFacts from '../data/QuickFacts'
 import ItemsLinks from '../components/CoursesAndResources/ItemsLinks'
 
 
-
-const OverviewPage = () => {
-  let id = useLocation().pathname.substr(1)
-  return (
+const OverviewPage = () =>
     <div className="py-3 pt-xl-5">
       <About
-        title={QuickFacts[id].title}
-        subtitle={QuickFacts[id].subtitle}
-        list={QuickFacts[id].list}
+        title={Title}
+        subtitle={Content}
       />
       <Container className="d-grid justify-content-between px-2 px-lg-5 text-center">
         <Row>
@@ -38,8 +33,10 @@ const OverviewPage = () => {
       </Container>
       <p className="text-center mb-5 h5" style={{color:"tomato"}}><i>Fully immersed in Software Engineering. World traveller. Beer lover. Sincerely Yours Andrew Z.</i></p>
     </div>
-  )
-}
 
+
+const Title = "About React Finder"
+
+const Content = "This is React Web Application with the integration of tools such as React Context and Hooks, Styled Components, Lottie Animations, Auth0 Authentication with easy Github and Google Login, QraphQl (all data published and managed at Contentful), Bootstrap component library, Responsive Design, Formspree form backend email service. \n Feel free to use this website to meet your personal learning goals as well as searching new career-changing opportunities. If you find this Web App useful, please share your experience with me on Twitter."
 
 export default OverviewPage

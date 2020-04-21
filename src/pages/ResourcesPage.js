@@ -7,17 +7,22 @@ import ItemsLinks from '../components/CoursesAndResources/ItemsLinks'
 
 const ResourcesPage = () => {
   let { path, url } = useRouteMatch();
-  const { filteredResourcesData } = useDataItems()
+  const { filteredResourcesData, loading } = useDataItems()
 
   return (
     <div className="my-5 py-5">
-      <ItemsLinks path={path} url={url} list={List}/>
-      <CoursesAndResources
-        path={path}
-        url={url}
-        data={filteredResourcesData}
-        list={List}
-      />
+      {
+        !loading &&
+        <>
+          <ItemsLinks path={path} url={url} list={List}/>
+          <CoursesAndResources
+            path={path}
+            url={url}
+            data={filteredResourcesData}
+            list={List}
+          />
+        </>
+      }
     </div>
   )
 }

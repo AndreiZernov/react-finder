@@ -13,9 +13,7 @@ const ProfileAndMenu = () => {
 
   console.log(inputAllow)
 
-  React.useEffect(() => {
-    userName === "user" && setUserName(user.nickname)
-  }, [])
+  React.useEffect(() => { userName === "user" && setUserName(user.nickname) }, [userName,user.nickname])
 
   const handleImageUpload = e => {
   const [file] = e.target.files;
