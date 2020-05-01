@@ -8,7 +8,6 @@ import AccountModal from './AccountModal'
 const ItemsTable = ({data}) => {
   const { pickedItems, removePickedItem, newCourses, removeNewCourses } = useDataItems()
 
-
   const AccountItemConverter = (pick) => data[pick.split("-")[1]]
   .filter(item => item.id === +pick.split("-")[2])[0]
 
@@ -32,12 +31,11 @@ const ItemsTable = ({data}) => {
             &&
               <TableSample key={AccountItemConverter(pick).id} data={AccountItemConverter(pick)}  handleClick={handleClick} AccountItemConverter={AccountItemConverter} />
           )}
-
+          
           {newCourses.length > 0 &&  newCourses.map(pick =>
             data.hasOwnProperty(pick.parent1)
             &&
               <TableSample key={pick.id} data={pick} handleClick={handleClick} removeNewCourses={removeNewCourses} />
-
           )}
         </tbody>
       </Table>

@@ -8,8 +8,6 @@ import FilterSample from '../FilterSample'
 
 const CoursesAndResources = ({ path, url, data, list }) => {
   const { coursesData, resourcesData } = useDataItems()
-  console.log("coursesData")
-
   return (
     <Switch>
       <Route exact path={path}>
@@ -22,7 +20,6 @@ const CoursesAndResources = ({ path, url, data, list }) => {
       </Route>
       <Route path={`${path}/:id`}>
         <Items data={path === "/courses" ? coursesData : resourcesData}/>
-
       </Route>
     </Switch>
   )

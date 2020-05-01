@@ -1,12 +1,12 @@
-import React from 'react'
-import { Form, Container, Row, Col } from "react-bootstrap";
+import React, { useState } from 'react'
+import { Form, Container, Row, Col } from "react-bootstrap"
 import { useDataItems } from "../contexts/dataItems-context"
 
 
 const FilterSample = ({list, path}) => {
   const { coursesData, resourcesData, setFilteredCoursesData, setFilteredResourcesData  } = useDataItems()
-  const [ searchValue, setSearchValue ] = React.useState("")
-  const [ topics, setTopics ] = React.useState({all: true, react: false, react_native: false, redux: false, graphql: false, pathway: false, job_search: false, podcasts: false, resources: false, html_css: false })
+  const [ searchValue, setSearchValue ] = useState("")
+  const [ topics, setTopics ] = useState({all: true, react: false, react_native: false, redux: false, graphql: false, pathway: false, job_search: false, podcasts: false, resources: false, html_css: false })
 
   const FilterSearch = (data, search) => {
     let newData = {}

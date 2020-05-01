@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 import Recommend from './Recommend'
 
 
@@ -7,14 +7,12 @@ import Recommend from './Recommend'
 const Footer = () =>
   <footer className="d-flex fixed-bottom justify-content-between align-items-center px-md-3 p-1 bg-dark" style={{opacity:".8"}}>
     <div>
-
       {FooterContent.map(link =>
         <a className="m-1 m-lg-2" key={link.id} href={link.url} target="_blank" rel="noopener noreferrer">
           {link.img}
         </a>
       )}
     </div>
-
     <Recommend />
   </footer>
 
