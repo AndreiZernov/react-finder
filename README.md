@@ -81,7 +81,9 @@ Formspree form backend email service was used.</p>
 
 ---
 
-<h2> Support</h2> [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/AndreiZernov)
+<h2> Support</h2>
+
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/AndreiZernov)
 
 Reach out to me at one of the following places!
 
