@@ -16,7 +16,7 @@ Application created for community as links to Free Helpful Resources, which cove
 
 ---
 
-## Technologies
+<h2 align="center"> Technologies</h2>
 
 Project is created with:
 
@@ -31,7 +31,7 @@ Project is created with:
 
 ---
 
-<h2> Launch and Content</h2>
+<h2 align="center"> Launch and Content</h2>
 
 To launch this project, go to https://react-finder.netlify.app/
 
