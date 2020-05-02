@@ -27,7 +27,7 @@ Project is created with:
 - React Lottie: 1.2.3
 - Formspree (backend email service)
 
-<h2 align="center"> Launch and Content</h2>
+<h2> Launch and Content</h2>
 
 To launch this project, go to https://react-finder.netlify.app/
 
@@ -79,7 +79,7 @@ Formspree form backend email service was used.
   <img src="./src/images/readme6.gif">
 </div>
 
-<h2 align="center"> Support</h2>
+<h2> Support</h2>
 
 Reach out to me at one of the following places!
 
@@ -89,7 +89,7 @@ Reach out to me at one of the following places!
 
 [![ForTheBadge built-by-developers](http://ForTheBadge.com/images/badges/built-by-developers.svg)](https://github.com/AndreiZernov)
 
-<h2 align="center"> License</h2>
+<h2> License</h2>
 
 MIT license [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/AndreiZernov/react-finder/blob/master/LICENSE)
 Copyright 2020 © React Finder
