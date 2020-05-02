@@ -14,6 +14,8 @@
 
 Application created for community as links to Free Helpful Resources, which cover React, React Native, Redux and GraphQl materials.
 
+---
+
 ## Technologies
 
 Project is created with:
@@ -26,6 +28,8 @@ Project is created with:
 - React Icons: 3.9.0
 - React Lottie: 1.2.3
 - Formspree (backend email service)
+
+---
 
 <h2> Launch and Content</h2>
 
@@ -79,6 +83,8 @@ Formspree form backend email service was used.
   <img src="./src/images/readme6.gif">
 </div>
 
+---
+
 <h2> Support</h2>
 
 Reach out to me at one of the following places!
@@ -87,9 +93,10 @@ Reach out to me at one of the following places!
 - Twitter at [AndrewZ](https://twitter.com/AndrewZer)
 - LinkedIn at [Andrew Zernov](https://www.linkedin.com/in/andrei-zernov/)
 
-[![ForTheBadge built-by-developers](http://ForTheBadge.com/images/badges/built-by-developers.svg)](https://github.com/AndreiZernov)
+---
 
 <h2> License</h2>
 
 MIT license [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/AndreiZernov/react-finder/blob/master/LICENSE)
+
 Copyright 2020 © React Finder
