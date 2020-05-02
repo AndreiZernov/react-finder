@@ -1,8 +1,8 @@
-<div align="center">
-  <img src="./public/logo192.png"></img>
+<div align="center" justify="center">
+  <h1>React <img src="./public/logo192.png"></img> Finder</h1>
 </div>
 
-<h1 align="center">React Finder - guide to React JavaScript library</h1>
+<h2 align="center">guide to React JavaScript library</h2>
 
 [![Website perso.crans.org](https://img.shields.io/website-up-down-green-red/http/perso.crans.org.svg)](https://react-finder.netlify.app/)
 [![Build Status](https://travis-ci.com/AndreiZernov/react-finder.svg?branch=master)](https://travis-ci.com/AndreiZernov/react-finder)
