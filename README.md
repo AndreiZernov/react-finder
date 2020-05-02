@@ -4,6 +4,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Size](https://github-size-badge.herokuapp.com/:owner/:repo.svg)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm)
+[![ForTheBadge built-by-AndreiZernov](http://ForTheBadge.com/images/badges/built-by-developers.svg)](https://GitHub.com/Naereen/)
 
 Application created for community as links to Free Helpful Resources, which cover React, React Native, Redux and GraphQl materials.
 

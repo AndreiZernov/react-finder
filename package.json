@@ -11,10 +11,13 @@
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
     "contentful": "^7.14.3",
+    "github-size-badge": "^0.1.0",
+    "gsap": "^3.2.6",
     "node-sass": "^4.13.1",
     "react": "^16.13.0",
     "react-bootstrap": "^1.0.0",
     "react-dom": "^16.13.0",
+    "react-gsap": "^1.2.0",
     "react-helmet": "^5.2.1",
     "react-icons": "^3.9.0",
     "react-lottie": "^1.2.3",
@@ -22,7 +25,6 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
     "react-transition-group": "^4.3.0",
-    "react-gsap": "^1.2.0",
     "rfs": "^9.0.2"
   },
   "scripts": {
