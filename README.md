@@ -4,14 +4,13 @@
 
 <h1 align="center">React Finder - guide to React JavaScript library</h1>
 
-[![Website perso.crans.org](https://img.shields.io/website-up-down-green-red/http/perso.crans.org.svg)](https://react-finder.netlify.app/)
+[![Website react-finder.netlify.app](https://img.shields.io/website-up-down-green-red/http/perso.crans.org.svg)](https://react-finder.netlify.app/)
 [![Build Status](https://travis-ci.com/AndreiZernov/react-finder.svg?branch=master)](https://travis-ci.com/AndreiZernov/react-finder)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/AndreiZernov/react-finder/blob/master/LICENSE)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm)
-[![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/issues/)
-[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/AndreiZernov)
 
+This is React Web Application with the integration of tools such as React Context and Hooks, Styled Components, Lottie Animations, Auth0 Authentication with easy Github and Google Login, QraphQl (all data published and managed at Contentful), Bootstrap component library, Responsive Design, Formspree form backend email service.
 Application created for community as links to Free Helpful Resources, which cover React, React Native, Redux and GraphQl materials.
 
 ---
@@ -82,7 +81,7 @@ Formspree form backend email service was used.</p>
 
 ---
 
-<h2> Support</h2>
+<h2> Support</h2> [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/AndreiZernov)
 
 Reach out to me at one of the following places!
 
