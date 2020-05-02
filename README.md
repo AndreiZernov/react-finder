@@ -1,16 +1,10 @@
-<div align="center" justify="center">
-  <h1>React <img src="./public/logo192.png"></img> Finder</h1>
+<div align="center">
+  <img src="./public/logo192.png"></img>
 </div>
 
-<h2 align="center">guide to React JavaScript library</h2>
+<h1 align="center">React Finder - guide to React JavaScript library</h1>
 
-[![Website perso.crans.org](https://img.shields.io/website-up-down-green-red/http/perso.crans.org.svg)](https://react-finder.netlify.app/)
-[![Build Status](https://travis-ci.com/AndreiZernov/react-finder.svg?branch=master)](https://travis-ci.com/AndreiZernov/react-finder)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/AndreiZernov/react-finder/blob/master/LICENSE)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-[![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm)
-[![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/issues/)
-[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/AndreiZernov)
+[![Website perso.crans.org](https://img.shields.io/website-up-down-green-red/http/perso.crans.org.svg)](https://react-finder.netlify.app/) [![Build Status](https://travis-ci.com/AndreiZernov/react-finder.svg?branch=master)](https://travis-ci.com/AndreiZernov/react-finder) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/AndreiZernov/react-finder/blob/master/LICENSE) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) [![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm) [![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/issues/) [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/AndreiZernov)
 
 Application created for community as links to Free Helpful Resources, which cover React, React Native, Redux and GraphQl materials.
 
