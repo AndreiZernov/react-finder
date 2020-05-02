@@ -1,5 +1,8 @@
 # React Finder - guide to React JavaScript library
 
+[![Build Status](https://travis-ci.com/AndreiZernov/react-finder.svg?branch=master)](https://travis-ci.com/AndreiZernov/react-finder)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Application created for community as links to Free Helpful Resources, which cover React, React Native, Redux and GraphQl materials.
 
 
