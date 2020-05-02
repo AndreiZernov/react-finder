@@ -1,15 +1,21 @@
-import React from 'react'
-import { Container, Col, Row} from 'react-bootstrap'
+import React from "react";
+import { Container, Col, Row } from "react-bootstrap";
 
-
-const About = ({title, subtitle, list}) =>
+const About = ({ title, subtitle, list }) => (
   <Container className="align-items-center justify-content-center">
     <Row className="mt-5 p-xl-3">
-      <Col xl={4} className="text-center h2 m-auto py-2" style={{fontWeight: "600"}}>
+      <Col
+        xl={4}
+        className="text-center h2 m-auto py-2"
+        style={{ fontWeight: "600" }}
+      >
         {title}
       </Col>
       <Col xl={8} className="m-auto">
-        <Col className="text-justify m-auto h5" style={{ whiteSpace: "pre-line"}}>
+        <Col
+          className="text-justify m-auto h5"
+          style={{ whiteSpace: "pre-line" }}
+        >
           {subtitle}
         </Col>
         <Col>
@@ -20,6 +26,6 @@ const About = ({title, subtitle, list}) =>
       </Col>
     </Row>
   </Container>
+);
 
-
-export default About
+export default About;

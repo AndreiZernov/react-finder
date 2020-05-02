@@ -1,11 +1,13 @@
-import React from 'react'
-import { useParams } from "react-router-dom"
-import List from './List'
-import About from '../About'
+import React from "react";
+import { useParams } from "react-router-dom";
+import List from "./List";
+import About from "../About";
 
-
-const Items = ({data}) => {
+const Items = ({ data }) => {
   let { id } = useParams();
+  console.log(id);
+  console.log(data[id][0]);
+
   return (
     <>
       <About
@@ -13,14 +15,9 @@ const Items = ({data}) => {
         subtitle={data[id][0].content}
         list={data[id][0].list}
       />
-      {data.hasOwnProperty(id) &&
-        <List
-        data={data[id]}
-        />
-      }
+      {data.hasOwnProperty(id) && <List data={data[id]} />}
     </>
-  )
-}
+  );
+};
 
-
-export default Items
+export default Items;
