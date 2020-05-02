@@ -33,7 +33,7 @@ Project is created with:
 
 <h2 align="center"> Launch and Content</h2>
 
-To launch this project, go to https://react-finder.netlify.app/
+<p align="center">To launch this project, go to https://react-finder.netlify.app/</p>
 
 <h3 align="center"> Navigation</h3>
 
@@ -43,7 +43,7 @@ To launch this project, go to https://react-finder.netlify.app/
 
 <h3 align="center"> Login</h3>
 
-<p align="center">_Auth0 Authentication with easy Github and Google Login._</p>
+<p align="center">Auth0 Authentication with easy Github and Google Login.</p>
 
 <div align="center">
   <img src="./src/images/readme2.gif">
@@ -51,7 +51,7 @@ To launch this project, go to https://react-finder.netlify.app/
 
 <h3 align="center"> Personal Account</h3>
 
-<p align="center">_Search functionality, Adding interesting resources and courses to account, Managing resources, Customize account._</p>
+<p align="center">Search functionality, Adding interesting resources and courses to account, Managing resources, Customize account.</p>
 
 <div align="center">
   <img src="./src/images/readme3.gif">
@@ -59,7 +59,7 @@ To launch this project, go to https://react-finder.netlify.app/
 
 <h3 align="center"> Edit more personal helpful links</h3>
 
-<p align="center">_(editing, removing, adding) resources and courses._</p>
+<p align="center">(editing, removing, adding) resources and courses.</p>
 
 <div align="center">
   <img src="./src/images/readme4.gif">
@@ -67,8 +67,8 @@ To launch this project, go to https://react-finder.netlify.app/
 
 <h3 align="center"> Recommend</h3>
 
-<p align="center">_Recommend additional materials for everyone, all your recommendations will be added ASAP.
-Formspree form backend email service was used._</p>
+<p align="center">Recommend additional materials for everyone, all your recommendations will be added ASAP.
+Formspree form backend email service was used.</p>
 
 <div align="center">
   <img src="./src/images/readme5.gif">
