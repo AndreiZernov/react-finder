@@ -39,6 +39,8 @@ To launch this project, go to https://react-finder.netlify.app/
 
 <h3 align="center"> Login</h3>
 
+Auth0 Authentication with easy Github and Google Login
+
 <div align="center">
   <img src="./src/images/readme2.gif">
 </div>
@@ -64,8 +66,17 @@ _(editing, removing, adding) resources and courses_
 
 <h3 align="center"> Recommend</h3>
 
+Recommend additional materials for everyone, all your recommendations will be added ASAP.
+Formspree form backend email service was used.
+
 <div align="center">
   <img src="./src/images/readme5.gif">
+</div>
+
+<h3 align="center">Responsive Design</h3>
+
+<div align="center">
+  <img src="./src/images/readme6.gif">
 </div>
 
 <h2 align="center"> Support</h2>
