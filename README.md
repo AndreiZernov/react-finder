@@ -1,4 +1,4 @@
-# React Finder - guide to React JavaScript library
+<div align="center"># React Finder - guide to React JavaScript library</div>
 
 [![Website perso.crans.org](https://img.shields.io/website-up-down-green-red/http/perso.crans.org.svg)](https://react-finder.netlify.app/)
 [![Build Status](https://travis-ci.com/AndreiZernov/react-finder.svg?branch=master)](https://travis-ci.com/AndreiZernov/react-finder)
@@ -26,5 +26,19 @@ Project is created with:
 ## Launch
 
 To launch this project, go to https://react-finder.netlify.app/
+
+#### Navigation
+
+![Navigation](./src/images/readme1.gif)
+
+![Home Page](./src/images/readme-photo-1.jpg)
+![Authentication](./src/images/readme-photo-2.jpg)
+![Home Page](./src/images/readme-photo-3.jpg)
+![Home Page](./src/images/readme-photo-4.jpg)
+![Home Page](./src/images/readme-photo-5.jpg)
+![Home Page](./src/images/readme-photo-6.jpg)
+![Home Page](./src/images/readme-photo-7.jpg)
+![Home Page](./src/images/readme-photo-8.jpg)
+![Home Page](./src/images/readme-photo-9.jpg)
 
 [![ForTheBadge built-by-developers](http://ForTheBadge.com/images/badges/built-by-developers.svg)](https://github.com/AndreiZernov)
