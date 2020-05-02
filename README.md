@@ -2,8 +2,6 @@
   <img src="./public/logo192.png"></img>
 </div>
 
-# <div align="center">React Finder - guide to React JavaScript library</div>
-
 <h1 align="center">React Finder - guide to React JavaScript library</h1>
 
 [![Website perso.crans.org](https://img.shields.io/website-up-down-green-red/http/perso.crans.org.svg)](https://react-finder.netlify.app/)
@@ -29,23 +27,23 @@ Project is created with:
 - React Lottie: 1.2.3
 - Formspree (backend email service)
 
-## Launch and Content
+<h2 align="center"> Launch and Content</h2>
 
 To launch this project, go to https://react-finder.netlify.app/
 
-#### Navigation
+<h3 align="center"> Navigation</h3>
 
 <div align="center">
   <img src="./src/images/readme1.gif">
 </div>
 
-#### Login
+<h3 align="center"> Login</h3>
 
 <div align="center">
   <img src="./src/images/readme2.gif">
 </div>
 
-#### Personal Account
+<h3 align="center"> Personal Account</h3>
 
 - _Search functionality_
 - _Adding interesting resources and cources to account_
@@ -56,21 +54,21 @@ To launch this project, go to https://react-finder.netlify.app/
   <img src="./src/images/readme3.gif">
 </div>
 
-#### Edit more personal helpful links
+<h3 align="center"> Edit more personal helpful links</h3>
 
 _(editing, removing, adding) resources and courses_
 
 <div align="center">
-  <img src="./src/images/readme4.gif)">
+  <img src="./src/images/readme4.gif">
 </div>
 
-#### Recommend
+<h3 align="center"> Recommend</h3>
 
 <div align="center">
   <img src="./src/images/readme5.gif">
 </div>
 
-## Support
+<h2 align="center"> Support</h2>
 
 Reach out to me at one of the following places!
 
@@ -79,3 +77,8 @@ Reach out to me at one of the following places!
 - LinkedIn at [Andrew Zernov](https://www.linkedin.com/in/andrei-zernov/)
 
 [![ForTheBadge built-by-developers](http://ForTheBadge.com/images/badges/built-by-developers.svg)](https://github.com/AndreiZernov)
+
+<h2 align="center"> License</h2>
+
+MIT license [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/AndreiZernov/react-finder/blob/master/LICENSE)
+Copyright 2020 © React Finder
