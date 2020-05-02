@@ -1,4 +1,4 @@
-<div align="center">![Logo](./public/logo192.png)</div>
+<img align="center" src="./public/logo192.png"></img>
 
 # <div align="center">React Finder - guide to React JavaScript library</div>
 
@@ -33,13 +33,11 @@ To launch this project, go to https://react-finder.netlify.app/
 
 #### Navigation
 
-<div align="center">
-</div>
-![Navigation](./src/images/readme1.gif)
+<img align="center" src="./src/images/readme1.gif">
 
 #### Login
 
-<div align="center">![Login](./src/images/readme2.gif)</div>
+<img align="center" src="./src/images/readme2.gif">
 
 #### Personal Account
 
@@ -48,16 +46,15 @@ To launch this project, go to https://react-finder.netlify.app/
 - _Managing resources_
 - _Customize account_
 
-<div align="center">![Search](./src/images/readme3.gif)</div>
+<img align="center" src="./src/images/readme3.gif">
 #### Edit more personal helpful links
 
 _(editing, removing, adding) resources and courses_
-
-<div align="center">![Navigation](./src/images/readme4.gif)</div>
+<img align="center" src="./src/images/readme4.gif)">
 
 #### Recommend
 
-<div align="center">![Navigation](./src/images/readme5.gif)</div>
+<img align="center" src="./src/images/readme5.gif">
 
 ## Support
 
