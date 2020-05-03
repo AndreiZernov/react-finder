@@ -90,7 +90,7 @@ Formspree form backend email service was used.</p>
 Reach out to me at one of the following places!
 
 - Website at [React Finder](https://react-finder.netlify.app/)
-- Twitter at [AndrewZ](https://twitter.com/AndrewZer)
+- Twitter at [AndrewZer](https://twitter.com/AndrewZer)
 - LinkedIn at [Andrew Zernov](https://www.linkedin.com/in/andrei-zernov/)
 
 ---
