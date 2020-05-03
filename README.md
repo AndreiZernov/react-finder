@@ -81,6 +81,8 @@ Formspree form backend email service was used.</p>
 
 ---
 
+<div align="center">
+
 <h2> Support</h2>
 
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/AndreiZernov)
@@ -98,3 +100,5 @@ Reach out to me at one of the following places!
 MIT license [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/AndreiZernov/react-finder/blob/master/LICENSE)
 
 Copyright 2020 © React Finder
+
+</div>
