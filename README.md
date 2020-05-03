@@ -6,14 +6,9 @@
 
 [![Website react-finder.netlify.app](https://img.shields.io/website-up-down-green-red/http/perso.crans.org.svg)](https://react-finder.netlify.app/)
 [![Build Status](https://travis-ci.com/AndreiZernov/react-finder.svg?branch=master)](https://travis-ci.com/AndreiZernov/react-finder)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/baa88813aabe474d8bee6be143397474)](https://www.codacy.com/manual/AndreiZernov/react-finder?utm_source=github.com&utm_medium=referral&utm_content=AndreiZernov/react-finder&utm_campaign=Badge_Grade)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/AndreiZernov/react-finder/blob/master/LICENSE)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/baa88813aabe474d8bee6be143397474)](https://www.codacy.com/manual/AndreiZernov/react-finder?utm_source=github.com&utm_medium=referral&utm_content=AndreiZernov/react-finder&utm_campaign=Badge_Grade) <img src="./test_results/lighthouse.svg"> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/AndreiZernov/react-finder/blob/master/LICENSE)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm)
-
-<img src="./test_results/lighthouse_accessibility.svg"> <img src="./test_results/lighthouse_best-practices.svg"> <img src="./test_results/lighthouse_performance.svg">
-<img src="./test_results/lighthouse_seo.svg"> <img src="./test_results/lighthouse_pwa.svg">
-<img src="./test_results/lighthouse.svg">
 
 This is React Web Application with the integration of tools such as React Context and Hooks, Styled Components, Lottie Animations, Auth0 Authentication with easy Github and Google Login, QraphQl (all data published and managed at Contentful), Bootstrap component library, Responsive Design, Formspree form backend email service.
 Application created for community as links to Free Helpful Resources, which cover React, React Native, Redux and GraphQl materials.
