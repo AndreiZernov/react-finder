@@ -11,11 +11,8 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm)
 
-<img style={{display: "inline"}} src="./test_results/lighthouse_accessibility.svg">
-<img style={{display: "inline"}} src="./test_results/lighthouse_best-practices.svg">
-<img style={{display: "inline"}} src="./test_results/lighthouse_performance.svg">
-<img style={{display: "inline"}} src="./test_results/lighthouse_seo.svg">
-<img style={{display: "inline"}} src="./test_results/lighthouse_pwa.svg">
+<img src="./test_results/lighthouse_accessibility.svg"><img src="./test_results/lighthouse_best-practices.svg"><img src="./test_results/lighthouse_performance.svg">
+img src="./test_results/lighthouse_seo.svg"><img src="./test_results/lighthouse_pwa.svg">
 
 This is React Web Application with the integration of tools such as React Context and Hooks, Styled Components, Lottie Animations, Auth0 Authentication with easy Github and Google Login, QraphQl (all data published and managed at Contentful), Bootstrap component library, Responsive Design, Formspree form backend email service.
 Application created for community as links to Free Helpful Resources, which cover React, React Native, Redux and GraphQl materials.
