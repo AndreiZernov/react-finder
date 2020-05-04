@@ -13,6 +13,8 @@
 This is React Web Application with the integration of tools such as React Context and Hooks, Styled Components, Lottie Animations, Auth0 Authentication with easy Github and Google Login, QraphQl (all data published and managed at Contentful), Bootstrap component library, Responsive Design, Formspree form backend email service.
 Application created for community as links to Free Helpful Resources, which cover React, React Native, Redux and GraphQl materials.
 
+<!-- lighthouse-badges --urls https://www.youtube.com/ https://www.youtube.com/feed/trending -o test_results -->
+
 ---
 
 <h2 align="center"> Technologies</h2>
