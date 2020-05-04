@@ -3,6 +3,21 @@ import { DataItemsConsumer } from "../../contexts/dataItems-context";
 import { Row, Col, Card } from "react-bootstrap";
 import ItemsTable from "../../components/Account/ItemsTable";
 
+const FilterResourcesData = (data, check) => {
+  let newData = {};
+  for (let [key, value] of Object.entries(data)) {
+    if (key === check) newData = { ...newData, [key]: value };
+  }
+  return newData;
+};
+
+const ResourcesTables = [
+  { name: "job_search", title: "Job and Freelance Search" },
+  { name: "podcasts", title: "React Podcast Channels" },
+  { name: "html_css", title: "HTML and CSS links" },
+  { name: "resources", title: "React Helpful Resources" },
+];
+
 const Tables = () => (
   <DataItemsConsumer>
     {({ coursesData, resourcesData }) => (
@@ -40,20 +55,5 @@ const Tables = () => (
     )}
   </DataItemsConsumer>
 );
-
-const FilterResourcesData = (data, check) => {
-  let newData = {};
-  for (let [key, value] of Object.entries(data)) {
-    if (key === check) newData = { ...newData, [key]: value };
-  }
-  return newData;
-};
-
-const ResourcesTables = [
-  { name: "job_search", title: "Job and Freelance Search" },
-  { name: "podcasts", title: "React Podcast Channels" },
-  { name: "html_css", title: "HTML and CSS links" },
-  { name: "resources", title: "React Helpful Resources" },
-];
 
 export default Tables;

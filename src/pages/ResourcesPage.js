@@ -4,6 +4,8 @@ import { useDataItems } from "../contexts/dataItems-context";
 import CoursesAndResources from "../components/CoursesAndResources";
 import ItemsLinks from "../components/CoursesAndResources/ItemsLinks";
 
+const List = ["job_search", "podcasts", "resources", "html_css"];
+
 const ResourcesPage = () => {
   let { path, url } = useRouteMatch();
   const { filteredResourcesData, loading } = useDataItems();
@@ -24,7 +26,5 @@ const ResourcesPage = () => {
     </div>
   );
 };
-
-const List = ["job_search", "podcasts", "resources", "html_css"];
 
 export default ResourcesPage;

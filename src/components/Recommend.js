@@ -2,6 +2,23 @@ import React, { useState } from "react";
 import { Modal, Button, Accordion, Card, Form } from "react-bootstrap";
 import { ListCourses, ListResources } from "../data/FormData";
 
+const RecommendForms = [
+  {
+    title: "ADD COURSE",
+    validation: "validation3",
+    select: ListCourses.selectItems,
+    input: ListCourses.inputItems,
+    eventKey: 1,
+  },
+  {
+    title: "ADD RESOURCE",
+    validation: "validation4",
+    select: ListResources.selectItems,
+    input: ListResources.inputItems,
+    eventKey: 2,
+  },
+];
+
 const Recommend = () => {
   const [modalShow, setModalShow] = React.useState(false);
 
@@ -182,22 +199,5 @@ const FormRecommend = ({ onHide }) => {
     </Accordion>
   );
 };
-
-const RecommendForms = [
-  {
-    title: "ADD COURSE",
-    validation: "validation3",
-    select: ListCourses.selectItems,
-    input: ListCourses.inputItems,
-    eventKey: 1,
-  },
-  {
-    title: "ADD RESOURCE",
-    validation: "validation4",
-    select: ListResources.selectItems,
-    input: ListResources.inputItems,
-    eventKey: 2,
-  },
-];
 
 export default Recommend;

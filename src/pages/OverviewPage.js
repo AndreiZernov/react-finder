@@ -4,6 +4,11 @@ import { Link } from "react-router-dom";
 import About from "../components/About";
 import ItemsLinks from "../components/CoursesAndResources/ItemsLinks";
 
+const Title = "About React Finder";
+
+const Content =
+  "This is React Web Application with the integration of tools such as React Context and Hooks, Styled Components, Lottie Animations, Auth0 Authentication with easy Github and Google Login, QraphQl (all data published and managed at Contentful), Bootstrap component library, Responsive Design, Formspree form backend email service. \n Feel free to use this website to meet your personal learning goals as well as searching new career-changing opportunities. If you find this Web App useful, please share your experience with me on Twitter.";
+
 const OverviewPage = () => (
   <div className="py-3 pt-xl-5 page">
     <About title={Title} subtitle={Content} />
@@ -39,10 +44,5 @@ const OverviewPage = () => (
     </p>
   </div>
 );
-
-const Title = "About React Finder";
-
-const Content =
-  "This is React Web Application with the integration of tools such as React Context and Hooks, Styled Components, Lottie Animations, Auth0 Authentication with easy Github and Google Login, QraphQl (all data published and managed at Contentful), Bootstrap component library, Responsive Design, Formspree form backend email service. \n Feel free to use this website to meet your personal learning goals as well as searching new career-changing opportunities. If you find this Web App useful, please share your experience with me on Twitter.";
 
 export default OverviewPage;

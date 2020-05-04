@@ -3,6 +3,14 @@ import { useAuth0 } from "../../contexts/auth0-context";
 import { Row, Col, Card, Form } from "react-bootstrap";
 import AccountModal from "../../components/Account/AccountModal";
 
+const Buttons = (uploadedImage) => [
+  { name: "Profile Statistics" },
+  { name: "Add Your Links" },
+  { name: "Add Your Projects" },
+  { name: "Contact Us" },
+  { name: "Settings" },
+];
+
 const ProfileAndMenu = () => {
   const { user } = useAuth0();
   const uploadedImage = React.useRef(null);
@@ -96,13 +104,5 @@ const ProfileAndMenu = () => {
     </Row>
   );
 };
-
-const Buttons = (uploadedImage) => [
-  { name: "Profile Statistics" },
-  { name: "Add Your Links" },
-  { name: "Add Your Projects" },
-  { name: "Contact Us" },
-  { name: "Settings" },
-];
 
 export default ProfileAndMenu;

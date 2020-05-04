@@ -3,6 +3,25 @@ import { Form, Button, Accordion, Card } from "react-bootstrap";
 import { useDataItems } from "../../contexts/dataItems-context";
 import { ListCourses, ListResources } from "../../data/FormData";
 
+const YourLinksForms = (inputValueCourse, inputValueResource) => [
+  {
+    title: "Course Form",
+    validation: "validation1",
+    select: ListCourses.selectItems,
+    input: ListCourses.inputItems,
+    eventKey: "1",
+    state: inputValueCourse,
+  },
+  {
+    title: "Resource Form",
+    validation: "validation2",
+    select: ListResources.selectItems,
+    input: ListResources.inputItems,
+    eventKey: "2",
+    state: inputValueResource,
+  },
+];
+
 const YourLinks = ({ data, editData, onHide }) => {
   const {
     newCourses,
@@ -193,24 +212,5 @@ const YourLinks = ({ data, editData, onHide }) => {
     </Accordion>
   );
 };
-
-const YourLinksForms = (inputValueCourse, inputValueResource) => [
-  {
-    title: "Course Form",
-    validation: "validation1",
-    select: ListCourses.selectItems,
-    input: ListCourses.inputItems,
-    eventKey: "1",
-    state: inputValueCourse,
-  },
-  {
-    title: "Resource Form",
-    validation: "validation2",
-    select: ListResources.selectItems,
-    input: ListResources.inputItems,
-    eventKey: "2",
-    state: inputValueResource,
-  },
-];
 
 export default YourLinks;

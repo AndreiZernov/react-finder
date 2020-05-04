@@ -6,7 +6,6 @@ import Tables from "./Tables";
 const Account = () => (
   <Container className="py-5 my-5 page">
     <ProfileAndMenu />
-
     <Tables />
   </Container>
 );

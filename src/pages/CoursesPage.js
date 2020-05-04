@@ -4,6 +4,8 @@ import { useDataItems } from "../contexts/dataItems-context";
 import CoursesAndResources from "../components/CoursesAndResources";
 import ItemsLinks from "../components/CoursesAndResources/ItemsLinks";
 
+const List = ["react", "react_native", "redux", "graphql", "pathway"];
+
 const CoursesPage = () => {
   let { path, url } = useRouteMatch();
   const { filteredCoursesData, loading } = useDataItems();
@@ -24,7 +26,5 @@ const CoursesPage = () => {
     </div>
   );
 };
-
-const List = ["react", "react_native", "redux", "graphql", "pathway"];
 
 export default CoursesPage;
