@@ -7,7 +7,7 @@ import {
   FaSignInAlt,
   FaUserPlus,
   FaSignOutAlt,
-  FaUserAlt
+  FaUserAlt,
 } from "react-icons/fa";
 
 const Header = () => {
@@ -116,7 +116,7 @@ const NavigationLink = ({ name, path, classItem }) => (
 const dropdownLinks = [
   { path: "", name: "HOME" },
   { path: "courses", name: "Courses" },
-  { path: "resources", name: "Resources" }
+  { path: "resources", name: "Resources" },
 ];
 
 const isAuthLinks = [
@@ -124,6 +124,6 @@ const isAuthLinks = [
   {
     path: "account",
     name: <FaUserAlt size="1.3em" />,
-    classItem: "ml-3 d-block d-lg-none"
-  }
+    classItem: "ml-3 d-block d-lg-none",
+  },
 ];

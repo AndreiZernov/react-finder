@@ -8,7 +8,7 @@ const YourLinks = ({ data, editData, onHide }) => {
     newCourses,
     setNewCourses,
     removeNewCourses,
-    removePickedItem
+    removePickedItem,
   } = useDataItems();
 
   const [validated, setValidated] = useState(false);
@@ -23,7 +23,7 @@ const YourLinks = ({ data, editData, onHide }) => {
     name: "",
     description: "",
     link: "",
-    duration: ""
+    duration: "",
   });
 
   const [inputValueResource, setInputValueResource] = useState({
@@ -33,7 +33,7 @@ const YourLinks = ({ data, editData, onHide }) => {
     parent2: "resourceData",
     name: "",
     description: "",
-    link: ""
+    link: "",
   });
 
   useEffect(() => {
@@ -45,23 +45,23 @@ const YourLinks = ({ data, editData, onHide }) => {
     }
   }, [data, editData]);
 
-  const handleChange = event => {
+  const handleChange = (event) => {
     const { name, value, id } = event.target;
     id === "validation1" &&
-      setInputValueCourse(inputValueCourse => ({
+      setInputValueCourse((inputValueCourse) => ({
         ...inputValueCourse,
         [name]: value,
-        id: `${inputValueCourse.parent1}-${inputValueCourse.name}`
+        id: `${inputValueCourse.parent1}-${inputValueCourse.name}`,
       }));
     id === "validation2" &&
-      setInputValueResource(inputValueCourse => ({
+      setInputValueResource((inputValueCourse) => ({
         ...inputValueCourse,
         [name]: value,
-        id: `${inputValueCourse.parent1}-${inputValueCourse.name}`
+        id: `${inputValueCourse.parent1}-${inputValueCourse.name}`,
       }));
   };
 
-  const handleSubmit = event => {
+  const handleSubmit = (event) => {
     event.preventDefault();
 
     data === "Edit" && newCourses.length !== 0 && removeNewCourses(editData);
@@ -78,19 +78,19 @@ const YourLinks = ({ data, editData, onHide }) => {
     setValidated(true);
 
     event.target.id === "validation1" &&
-      setNewCourses(newCourses => [
+      setNewCourses((newCourses) => [
         ...newCourses,
         {
           ...inputValueCourse,
           duration: `${inputValueCourse.duration} hours`,
-          owner: "user"
-        }
+          owner: "user",
+        },
       ]);
 
     event.target.id === "validation2" &&
-      setNewCourses(newCourses => [
+      setNewCourses((newCourses) => [
         ...newCourses,
-        { ...inputValueResource, owner: "user" }
+        { ...inputValueResource, owner: "user" },
       ]);
 
     onHide();
@@ -111,7 +111,7 @@ const YourLinks = ({ data, editData, onHide }) => {
           ? "Please Edit Form Below!"
           : "Choose What you Would Like To Add First!"}
       </p>
-      {YourLinksForms(inputValueCourse, inputValueResource).map(linkform => (
+      {YourLinksForms(inputValueCourse, inputValueResource).map((linkform) => (
         <Card key={linkform.validation} bg="dark">
           <Card.Header>
             <Accordion.Toggle
@@ -162,13 +162,13 @@ const YourLinks = ({ data, editData, onHide }) => {
                     name="parent1"
                     className="rounded my-1 p-2 w-100"
                   >
-                    {linkform.select.map(item => (
+                    {linkform.select.map((item) => (
                       <option key={item.value} value={item.value}>
                         {item.name}
                       </option>
                     ))}
                   </Form.Control>
-                  {linkform.input.map(item => (
+                  {linkform.input.map((item) => (
                     <Form.Control
                       onChange={handleChange}
                       required
@@ -201,7 +201,7 @@ const YourLinksForms = (inputValueCourse, inputValueResource) => [
     select: ListCourses.selectItems,
     input: ListCourses.inputItems,
     eventKey: "1",
-    state: inputValueCourse
+    state: inputValueCourse,
   },
   {
     title: "Resource Form",
@@ -209,8 +209,8 @@ const YourLinksForms = (inputValueCourse, inputValueResource) => [
     select: ListResources.selectItems,
     input: ListResources.inputItems,
     eventKey: "2",
-    state: inputValueResource
-  }
+    state: inputValueResource,
+  },
 ];
 
 export default YourLinks;

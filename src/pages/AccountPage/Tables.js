@@ -20,7 +20,7 @@ const Tables = () => (
         </Row>
 
         <Row className="justify-content-between">
-          {ResourcesTables.map(resourseTable => (
+          {ResourcesTables.map((resourseTable) => (
             <Col
               key={resourseTable.name}
               border="secondary"
@@ -53,7 +53,7 @@ const ResourcesTables = [
   { name: "job_search", title: "Job and Freelance Search" },
   { name: "podcasts", title: "React Podcast Channels" },
   { name: "html_css", title: "HTML and CSS links" },
-  { name: "resources", title: "React Helpful Resources" }
+  { name: "resources", title: "React Helpful Resources" },
 ];
 
 export default Tables;

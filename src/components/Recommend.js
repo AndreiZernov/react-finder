@@ -48,7 +48,7 @@ const FormRecommend = ({ onHide }) => {
   const [status, setStatus] = useState("");
   const [validated, setValidated] = useState(false);
 
-  const submitForm = ev => {
+  const submitForm = (ev) => {
     ev.preventDefault();
     const form = ev.target;
     const data = new FormData(form);
@@ -68,7 +68,7 @@ const FormRecommend = ({ onHide }) => {
     xhr.send(data);
   };
 
-  const handleSubmit = event => {
+  const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
@@ -82,7 +82,7 @@ const FormRecommend = ({ onHide }) => {
 
   return (
     <Accordion>
-      {RecommendForms.map(recForm => (
+      {RecommendForms.map((recForm) => (
         <Card key={recForm.validation} bg="dark">
           <Card.Header>
             <Accordion.Toggle
@@ -136,13 +136,13 @@ const FormRecommend = ({ onHide }) => {
                     name="courses"
                     className="rounded my-1 p-2"
                   >
-                    {recForm.select.map(item => (
+                    {recForm.select.map((item) => (
                       <option key={item.value} value={item.value}>
                         {item.name}
                       </option>
                     ))}
                   </Form.Control>
-                  {recForm.input.map(item => (
+                  {recForm.input.map((item) => (
                     <Form.Control
                       required
                       key={item.name}
@@ -189,15 +189,15 @@ const RecommendForms = [
     validation: "validation3",
     select: ListCourses.selectItems,
     input: ListCourses.inputItems,
-    eventKey: 1
+    eventKey: 1,
   },
   {
     title: "ADD RESOURCE",
     validation: "validation4",
     select: ListResources.selectItems,
     input: ListResources.inputItems,
-    eventKey: 2
-  }
+    eventKey: 2,
+  },
 ];
 
 export default Recommend;

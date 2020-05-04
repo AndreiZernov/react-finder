@@ -8,7 +8,7 @@ const Footer = () => (
     style={{ opacity: ".8" }}
   >
     <div>
-      {FooterContent.map(link => (
+      {FooterContent.map((link) => (
         <a
           className="m-1 m-lg-2"
           key={link.id}
@@ -30,16 +30,16 @@ const FooterContent = [
   {
     id: 0,
     url: "https://github.com/AndreiZernov",
-    img: <FaGithub size="1.3em" color="white" alt="iconsSocialMedia" />
+    img: <FaGithub size="1.3em" color="white" alt="iconsSocialMedia" />,
   },
   {
     id: 1,
     url: "https://www.linkedin.com/in/andrei-zernov/",
-    img: <FaLinkedinIn size="1.3em" color="white" alt="iconsSocialMedia" />
+    img: <FaLinkedinIn size="1.3em" color="white" alt="iconsSocialMedia" />,
   },
   {
     id: 3,
     url: "https://twitter.com/AndrewZer",
-    img: <FaTwitter size="1.3em" color="white" alt="iconsSocialMedia" />
-  }
+    img: <FaTwitter size="1.3em" color="white" alt="iconsSocialMedia" />,
+  },
 ];

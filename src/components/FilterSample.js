@@ -7,7 +7,7 @@ const FilterSample = ({ list, path }) => {
     coursesData,
     resourcesData,
     setFilteredCoursesData,
-    setFilteredResourcesData
+    setFilteredResourcesData,
   } = useDataItems();
   const [searchValue, setSearchValue] = useState("");
   const [topics, setTopics] = useState({
@@ -20,13 +20,13 @@ const FilterSample = ({ list, path }) => {
     job_search: false,
     podcasts: false,
     resources: false,
-    html_css: false
+    html_css: false,
   });
 
-  const FilterSearch = (data, search) => {
+  const filterSearch = (data, search) => {
     let newData = {};
     for (let [key, value] of Object.entries(data)) {
-      let newValue = value.filter(item =>
+      let newValue = value.filter((item) =>
         (item.name + item.description)
           .toLowerCase()
           .includes(search.toLowerCase())
@@ -36,7 +36,7 @@ const FilterSample = ({ list, path }) => {
     return newData;
   };
 
-  const FilterData = (data, topics) => {
+  const filterData = (data, topics) => {
     let newData = {};
     for (let [key, value] of Object.entries(topics)) {
       if (key === "all" && value === true) {
@@ -49,26 +49,26 @@ const FilterSample = ({ list, path }) => {
     return newData;
   };
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     let valueS = "";
     const { type, checked, value, id } = e.target;
-    setTopics(topics => ({ ...topics, [id]: checked }));
+    setTopics((topics) => ({ ...topics, [id]: checked }));
     if (type === "text") {
       setSearchValue(value);
       valueS = value;
     }
     if (path === "/courses") {
       setFilteredCoursesData(
-        FilterSearch(
-          FilterData(coursesData, { ...topics, [id]: checked }),
+        filterSearch(
+          filterData(coursesData, { ...topics, [id]: checked }),
           valueS
         )
       );
     }
     if (path === "/resources") {
       setFilteredResourcesData(
-        FilterSearch(
-          FilterData(resourcesData, { ...topics, [id]: checked }),
+        filterSearch(
+          filterData(resourcesData, { ...topics, [id]: checked }),
           valueS
         )
       );
@@ -96,7 +96,7 @@ const FilterSample = ({ list, path }) => {
               checked={topics["all"]}
               onChange={handleChange}
             />
-            {list.map(name => (
+            {list.map((name) => (
               <Form.Check
                 key={name}
                 id={name}
@@ -108,7 +108,7 @@ const FilterSample = ({ list, path }) => {
                   <img
                     style={{
                       height: "17px",
-                      filter: "brightness(0) invert(1)"
+                      filter: "brightness(0) invert(1)",
                     }}
                     src={require(`../images/${name}.${
                       path === "/courses" ? "png" : "svg"

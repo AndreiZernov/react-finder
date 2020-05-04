@@ -20,7 +20,7 @@ const About = ({ title, subtitle, list }) => (
         </Col>
         <Col>
           <ul className="mt-2 h5">
-            {list && list.map(item => <li key={item}>{item}</li>)}
+            {list && list.map((item) => <li key={item}>{item}</li>)}
           </ul>
         </Col>
       </Col>

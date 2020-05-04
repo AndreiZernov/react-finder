@@ -12,7 +12,7 @@ const CoursesAndResources = ({ path, url, data, list }) => {
       <Route exact path={path}>
         <FilterSample list={list} path={path} />
         {Object.entries(data).length > 0 && (
-          <List data={list.map(items => data[items]).flat(1)} />
+          <List data={list.map((items) => data[items]).flat(1)} />
         )}
       </Route>
       <Route path={`${path}/:id`}>

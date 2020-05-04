@@ -15,6 +15,15 @@ const DataItemsProvider = ({ children }) => {
   const [newCourses, setNewCourses] = useState("");
   const [loading, setLoading] = useState(true);
 
+  const formatData = (items) => {
+    let tempItems = items.map((item) => {
+      let img = "http:" + item.fields.img.fields.file.url;
+      let course = { ...item.fields, img };
+      return course;
+    });
+    return tempItems;
+  };
+
   useEffect(() => {
     async function getData() {
       try {
@@ -39,18 +48,18 @@ const DataItemsProvider = ({ children }) => {
         });
 
         let courseObj = {
-          react: FormatData(respReact.items),
-          react_native: FormatData(respReactNative.items),
-          redux: FormatData(respRedux.items),
-          graphql: FormatData(respGraphQl.items),
-          pathway: FormatData(respPathway.items),
+          react: formatData(respReact.items),
+          react_native: formatData(respReactNative.items),
+          redux: formatData(respRedux.items),
+          graphql: formatData(respGraphQl.items),
+          pathway: formatData(respPathway.items),
         };
 
         let resourcesObj = {
-          resources: FormatData(respResources.items),
-          job_search: FormatData(respJobSearch.items),
-          podcasts: FormatData(respPodcasts.items),
-          html_css: FormatData(respHtmlCss.items),
+          resources: formatData(respResources.items),
+          job_search: formatData(respJobSearch.items),
+          podcasts: formatData(respPodcasts.items),
+          html_css: formatData(respHtmlCss.items),
         };
 
         setCoursesData(courseObj);
@@ -66,15 +75,6 @@ const DataItemsProvider = ({ children }) => {
     }
     getData();
   }, []);
-
-  const FormatData = (items) => {
-    let tempItems = items.map((item) => {
-      let img = "http:" + item.fields.img.fields.file.url;
-      let course = { ...item.fields, img };
-      return course;
-    });
-    return tempItems;
-  };
 
   useEffect(() => {
     pickedItem &&

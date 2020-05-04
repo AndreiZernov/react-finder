@@ -10,12 +10,12 @@ export class Auth0Provider extends Component {
     auth0Client: null,
     isLoading: true,
     isAuthenticated: false,
-    user: "user"
+    user: "user",
   };
   config = {
     domain: process.env.REACT_APP_AUTH0_DOMAIN,
     client_id: process.env.REACT_APP_AUTH0_CLIENT_ID,
-    redirect_uri: window.location.origin
+    redirect_uri: window.location.origin,
   };
 
   componentDidMount() {
@@ -57,7 +57,7 @@ export class Auth0Provider extends Component {
       loginWithRedirect: (...p) => auth0Client.loginWithRedirect(...p),
       getTokenSilently: (...p) => auth0Client.getTokenSilently(...p),
       getIdTokenClaims: (...p) => auth0Client.getIdTokenClaims(...p),
-      logout: (...p) => auth0Client.logout(...p)
+      logout: (...p) => auth0Client.logout(...p),
     };
 
     return (

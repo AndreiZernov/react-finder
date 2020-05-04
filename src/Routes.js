@@ -16,7 +16,7 @@ const Routes = () => {
       <TransitionGroup>
         <CSSTransition key={location.key} classNames="fade" timeout={300}>
           <Switch location={location}>
-            {openRoutes.map(route => (
+            {openRoutes.map((route) => (
               <Route
                 key={route.id.toString()}
                 exact={route.exact}
@@ -37,7 +37,7 @@ const openRoutes = [
   { id: 1, path: "/overview", Component: OverviewPage, exact: true },
   { id: 2, path: "/courses", Component: CoursesPage, exact: false },
   { id: 3, path: "/resources", Component: ResourcesPage, exact: false },
-  { id: 4, path: "/account", Component: AccountPage, exact: false }
+  { id: 4, path: "/account", Component: AccountPage, exact: false },
 ];
 
 export default Routes;

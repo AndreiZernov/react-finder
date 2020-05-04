@@ -28,8 +28,8 @@ const LoadingData = () => {
           autoplay: true,
           animationData: animationData,
           rendererSettings: {
-            preserveAspectRatio: "xMidYMid slice"
-          }
+            preserveAspectRatio: "xMidYMid slice",
+          },
         }}
         height={400}
         width={400}
