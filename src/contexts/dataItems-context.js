@@ -19,23 +19,23 @@ const DataItemsProvider = ({ children }) => {
     async function getData() {
       try {
         let respReact = await Client.getEntries({
-          content_type: "coursesData"
+          content_type: "coursesData",
         });
         let respReactNative = await Client.getEntries({
-          content_type: "reactNative"
+          content_type: "reactNative",
         });
         let respRedux = await Client.getEntries({ content_type: "redux" });
         let respGraphQl = await Client.getEntries({ content_type: "graphql" });
         let respPathway = await Client.getEntries({ content_type: "pathway" });
         let respResources = await Client.getEntries({
-          content_type: "resources"
+          content_type: "resources",
         });
         let respJobSearch = await Client.getEntries({
-          content_type: "jobSearch"
+          content_type: "jobSearch",
         });
         let respHtmlCss = await Client.getEntries({ content_type: "htmlCss" });
         let respPodcasts = await Client.getEntries({
-          content_type: "podcasts"
+          content_type: "podcasts",
         });
 
         let courseObj = {
@@ -43,14 +43,14 @@ const DataItemsProvider = ({ children }) => {
           react_native: FormatData(respReactNative.items),
           redux: FormatData(respRedux.items),
           graphql: FormatData(respGraphQl.items),
-          pathway: FormatData(respPathway.items)
+          pathway: FormatData(respPathway.items),
         };
 
         let resourcesObj = {
           resources: FormatData(respResources.items),
           job_search: FormatData(respJobSearch.items),
           podcasts: FormatData(respPodcasts.items),
-          html_css: FormatData(respHtmlCss.items)
+          html_css: FormatData(respHtmlCss.items),
         };
 
         setCoursesData(courseObj);
@@ -61,14 +61,14 @@ const DataItemsProvider = ({ children }) => {
 
         setLoading(false);
       } catch (e) {
-        console.log(e);
+        // console.log(e);
       }
     }
     getData();
   }, []);
 
-  const FormatData = items => {
-    let tempItems = items.map(item => {
+  const FormatData = (items) => {
+    let tempItems = items.map((item) => {
       let img = "http:" + item.fields.img.fields.file.url;
       let course = { ...item.fields, img };
       return course;
@@ -79,14 +79,14 @@ const DataItemsProvider = ({ children }) => {
   useEffect(() => {
     pickedItem &&
       !pickedItems.includes(pickedItem) &&
-      setPickedItems(pickedItems => [...pickedItems, pickedItem]);
+      setPickedItems((pickedItems) => [...pickedItems, pickedItem]);
     setPickedItem("");
   }, [pickedItem, pickedItems]);
 
-  const removePickedItem = id =>
-    setPickedItems(pickedItems.filter(item => item !== id));
-  const removeNewCourses = course =>
-    setNewCourses(newCourses.filter(item => item.id !== course.id));
+  const removePickedItem = (id) =>
+    setPickedItems(pickedItems.filter((item) => item !== id));
+  const removeNewCourses = (course) =>
+    setNewCourses(newCourses.filter((item) => item.id !== course.id));
 
   const dataItems = {
     loading,
@@ -101,7 +101,7 @@ const DataItemsProvider = ({ children }) => {
     setFilteredResourcesData,
     newCourses,
     setNewCourses,
-    removeNewCourses
+    removeNewCourses,
   };
 
   return (

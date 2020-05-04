@@ -5,8 +5,6 @@ import About from "../About";
 
 const Items = ({ data }) => {
   let { id } = useParams();
-  console.log(id);
-  console.log(data[id][0]);
 
   return (
     <>

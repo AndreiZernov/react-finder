@@ -9,13 +9,15 @@ const ItemsTable = ({ data }) => {
     pickedItems,
     removePickedItem,
     newCourses,
-    removeNewCourses
+    removeNewCourses,
   } = useDataItems();
 
-  const AccountItemConverter = pick =>
-    data[pick.split("-")[1]].filter(item => item.id === +pick.split("-")[2])[0];
+  const AccountItemConverter = (pick) =>
+    data[pick.split("-")[1]].filter(
+      (item) => item.id === +pick.split("-")[2]
+    )[0];
 
-  const handleClick = item =>
+  const handleClick = (item) =>
     removePickedItem(`${[item.parent2]}-${[item.parent1]}-${[item.id]}`);
 
   return (
@@ -40,7 +42,7 @@ const ItemsTable = ({ data }) => {
         </thead>
         <tbody>
           {pickedItems.map(
-            pick =>
+            (pick) =>
               data.hasOwnProperty(pick.split("-")[1]) && (
                 <TableSample
                   key={AccountItemConverter(pick).id}
@@ -53,7 +55,7 @@ const ItemsTable = ({ data }) => {
 
           {newCourses.length > 0 &&
             newCourses.map(
-              pick =>
+              (pick) =>
                 data.hasOwnProperty(pick.parent1) && (
                   <TableSample
                     key={pick.id}
@@ -75,7 +77,7 @@ const TableSample = ({
   data,
   handleClick,
   AccountItemConverter,
-  removeNewCourses
+  removeNewCourses,
 }) => (
   <tr key={data.id}>
     <td style={{ verticalAlign: "middle" }}>
@@ -110,7 +112,7 @@ const TableSample = ({
             : () => handleClick(data)
         }
         style={{ height: "30px", cursor: "pointer" }}
-        src={require(`../../images/remove.png`)}
+        src={require("../../images/remove.png")}
         alt="remove"
       />
     </td>

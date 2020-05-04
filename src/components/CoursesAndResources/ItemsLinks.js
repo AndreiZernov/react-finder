@@ -16,13 +16,13 @@ const ItemsLinks = ({ path, url, list }) => (
       <Link className="m-3" to={`${url}`}>
         <img
           style={{ height: "35px" }}
-          src={require(`../../images/all.png`)}
+          src={require("../../images/all.png")}
           alt="all"
         ></img>
       </Link>
     </OverlayTrigger>
 
-    {list.map(name => (
+    {list.map((name) => (
       <OverlayTrigger
         key={name}
         placement="top"

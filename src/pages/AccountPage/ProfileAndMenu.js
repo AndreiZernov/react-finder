@@ -10,30 +10,28 @@ const ProfileAndMenu = () => {
   const [userName, setUserName] = React.useState("");
   const [inputAllow, setInputAllow] = React.useState(false);
 
-  console.log(inputAllow);
-
   React.useEffect(() => {
     userName === "user" && setUserName(user.nickname);
   }, [userName, user.nickname]);
 
-  const handleImageUpload = e => {
+  const handleImageUpload = (e) => {
     const [file] = e.target.files;
     if (file) {
       const reader = new FileReader();
       const { current } = uploadedImage;
       current.file = file;
-      reader.onload = e => {
+      reader.onload = (e) => {
         current.src = e.target.result;
       };
       reader.readAsDataURL(file);
     }
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setInputAllow(false);
   };
-  const handleChange = e => setUserName(e.target.value);
+  const handleChange = (e) => setUserName(e.target.value);
 
   return (
     <Row className="justify-content-between  mx-1">
@@ -60,7 +58,7 @@ const ProfileAndMenu = () => {
           <img
             onClick={() => imageUploader.current.click()}
             ref={uploadedImage}
-            src={user ? user.picture : require(`../../images/account.png`)}
+            src={user ? user.picture : require("../../images/account.png")}
             style={{ width: "100%", margin: "auto" }}
             alt="Account"
             className="text-center"
@@ -86,7 +84,7 @@ const ProfileAndMenu = () => {
       </Col>
 
       <Col lg={6} className="d-flex flex-column">
-        {Buttons(uploadedImage).map(btn => (
+        {Buttons(uploadedImage).map((btn) => (
           <AccountModal
             key={btn.name}
             data={btn.name}
@@ -99,12 +97,12 @@ const ProfileAndMenu = () => {
   );
 };
 
-const Buttons = uploadedImage => [
+const Buttons = (uploadedImage) => [
   { name: "Profile Statistics" },
   { name: "Add Your Links" },
   { name: "Add Your Projects" },
   { name: "Contact Us" },
-  { name: "Settings" }
+  { name: "Settings" },
 ];
 
 export default ProfileAndMenu;

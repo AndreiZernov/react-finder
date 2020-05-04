@@ -6,7 +6,7 @@ import ItemModal from "./ItemModal";
 const Item = ({ data }) => {
   const { setPickedItem, removePickedItem, pickedItems } = useDataItems();
 
-  const handleClick = e => {
+  const handleClick = (e) => {
     e.target.id === "add" &&
       setPickedItem(`${[data.parent2]}-${[data.parent1]}-${[data.id]}`);
     e.target.id === "remove" &&
@@ -52,7 +52,7 @@ const Item = ({ data }) => {
                   id="remove"
                   onClick={handleClick}
                   style={{ height: "30px", cursor: "pointer" }}
-                  src={require(`../../images/remove.png`)}
+                  src={require("../../images/remove.png")}
                   alt="remove"
                 />
               ) : (
@@ -60,7 +60,7 @@ const Item = ({ data }) => {
                   id="add"
                   onClick={handleClick}
                   style={{ height: "30px", cursor: "pointer" }}
-                  src={require(`../../images/add.png`)}
+                  src={require("../../images/add.png")}
                   alt="add"
                 />
               )}
