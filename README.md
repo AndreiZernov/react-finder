@@ -19,14 +19,15 @@ Application created for community as links to Free Helpful Resources, which cove
 
 Project is created with:
 
-- React: 16.13.0
-- Bootstrap 4: (4.4.1)
-- Auth0 Authentication (auth0-js): 9.13.1
-- SASS: 4.13.1
-- Contentful: 7.14.3
-- React Icons: 3.9.0
-- React Lottie: 1.2.3
-- Formspree (backend email service)
+<ul>
+  <li>React: 16.13.0</li>
+  <li>Bootstrap 4: (4.4.1)</li>
+  <li>Auth0 Authentication (auth0-js): 9.13.1</li>
+  <li>SASS: 4.13.1</li>
+  <li>Contentful: 7.14.3</li>
+  <li>React Lottie: 1.2.3</li>
+  <li>Formspree (backend email service)</li>
+</ul>
 
 ---
 
@@ -89,9 +90,11 @@ Formspree form backend email service was used.</p>
 
 Reach out to me at one of the following places!
 
-- Website at [React Finder](https://react-finder.netlify.app/)
-- Twitter at [AndrewZer](https://twitter.com/AndrewZer)
-- LinkedIn at [Andrew Zernov](https://www.linkedin.com/in/andrei-zernov/)
+Website at [React Finder](https://react-finder.netlify.app/)
+
+Twitter at [AndrewZer](https://twitter.com/AndrewZer)
+
+LinkedIn at [Andrew Zernov](https://www.linkedin.com/in/andrei-zernov/)
 
 ---
 
