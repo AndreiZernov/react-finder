@@ -10,7 +10,7 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm)
 
-This is React Web Application with the integration of tools such as React Context and Hooks, Styled Components, Lottie Animations, Auth0 Authentication with easy Github and Google Login, QraphQl (all data published and managed at Contentful), Bootstrap component library, Responsive Design, Formspree form backend email service.
+This is React Web Application with the integration of tools such as React Context and Hooks, Lottie Animations, Auth0 Authentication with fast Github and Google Login, QraphQl (all data published and managed at Contentful), Bootstrap component library, Responsive Design, Formspree form backend email service.
 Application created for community as links to Free Helpful Resources, which cover React, React Native, Redux and GraphQl materials.
 
 <!-- lighthouse-badges --urls https://www.youtube.com/ https://www.youtube.com/feed/trending -o test_results -->
