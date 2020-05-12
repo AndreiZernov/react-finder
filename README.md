@@ -6,9 +6,10 @@
 
 [![Website react-finder.netlify.app](https://img.shields.io/website-up-down-green-red/http/perso.crans.org.svg)](https://react-finder.netlify.app/)
 [![Build Status](https://travis-ci.com/AndreiZernov/react-finder.svg?branch=master)](https://travis-ci.com/AndreiZernov/react-finder)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/baa88813aabe474d8bee6be143397474)](https://www.codacy.com/manual/AndreiZernov/react-finder?utm_source=github.com&utm_medium=referral&utm_content=AndreiZernov/react-finder&utm_campaign=Badge_Grade) <img src="./test_results/lighthouse.svg"> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/AndreiZernov/react-finder/blob/master/LICENSE)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/92fb0ce07c3745b88ba00cf1f6a92581)](https://www.codacy.com/manual/AndreiZernov/Portfolio?utm_source=github.com&utm_medium=referral&utm_content=AndreiZernov/Portfolio&utm_campaign=Badge_Grade) <img src="./test_results/lighthouse.svg"> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/AndreiZernov/react-finder/blob/master/LICENSE)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4e24626d-c68b-4a15-b752-6db90f912d91/deploy-status)](https://app.netlify.com/sites/andreizernov/deploys)
 
 This is React Web Application with the integration of tools such as React Context and Hooks, Lottie Animations, Auth0 Authentication with fast Github and Google Login, QraphQl (all data published and managed at Contentful), Bootstrap component library, Responsive Design, Formspree form backend email service.
 Application created for community as links to Free Helpful Resources, which cover React, React Native, Redux and GraphQl materials.
